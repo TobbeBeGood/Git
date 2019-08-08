@@ -6,4 +6,5 @@ Dieses neue Projekt soll zeigen, dass ich gelernt habe, mit Git umzugehen.
 
 Hauptteil
 
-Ich kann die grundlegenden Befehle init, add , commit, checkout und merge benutzen
+ich wollte es hier doch anders machen. Vielleicht kenn ich micht nicht so gut aus wie ich dachte.
+
