@@ -1,1 +1,5 @@
 groﬂes Projekt
+
+Einleitung
+
+Dieses neue Projekt soll zeigen, dass ich gelernt habe, mit Git umzugehen.
