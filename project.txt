@@ -3,3 +3,7 @@ großes Projekt
 Einleitung
 
 Dieses neue Projekt soll zeigen, dass ich gelernt habe, mit Git umzugehen.
+
+Hauptteil
+
+Ich kann die grundlegenden Befehle init, add , commit, checkout und merge benutzen
