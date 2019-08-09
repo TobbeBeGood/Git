@@ -11,7 +11,7 @@ public class Notizblock{
 
 	public static void speichern(String abl){
 
-		notizen.set(speicherplatz, abl);
+		notizen.add(speicherplatz, abl);
 
 		speicherplatz++;
 

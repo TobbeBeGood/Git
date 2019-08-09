@@ -15,7 +15,6 @@ public class JavaGit {
 		Notizblock.speichern(notiz.next());
 
 
-		//Methode zum Ausführen einer Benutzer-bestimmten Funktion
 
 	}
 
