@@ -1,11 +1,17 @@
+import java.util.ArrayList;
+	
+	
+
 public class Notizblock{
 
+
+
 	static int speicherplatz=0;
-	static String[] notizen;
+	static ArrayList<String> notizen = new ArrayList<String>();
 
 	public static void speichern(String abl){
 
-		notizen[speicherplatz]=abl;
+		notizen.set(speicherplatz, abl);
 
 		speicherplatz++;
 
@@ -16,7 +22,7 @@ public class Notizblock{
 	public static String abrufen(int Seite){
 
 		
-		return notizen [Seite-1];
+		return notizen.get(Seite-1);
 
 	}
 }
