@@ -1,6 +1,0 @@
-Fehelerbehebung
-
--	update: ein Fehler behoben
-
--	es gibt einen neuen Fehler 556
-
