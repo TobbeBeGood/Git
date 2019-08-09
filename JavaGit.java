@@ -1,5 +1,5 @@
 public class JavaGit {
-	
+
 	import java.util.Scanner;
 
 	Scanner notiz =new Scanner(System.in);
@@ -12,7 +12,7 @@ public class JavaGit {
 
 		System.out.prinln("Bitte geben Sie ihre Notiz ein: ");
 
-		Notizblock.ablegen(notiz.next());
+		Notizblock.speichern(notiz.next());
 
 
 		//Methode zum Ausführen einer Benutzer-bestimmten Funktion
