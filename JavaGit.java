@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class JavaGit {
 
 	static Scanner notiz =new Scanner(System.in);
+	static Scanner seite =new Scanner(System.in);
 
 	public static void main (String[] args){
 
@@ -14,6 +15,11 @@ public class JavaGit {
 
 		Notizblock.speichern(notiz.next());
 
+
+		System.out.println("Auf welcher Seite möchten Sie nachschlagen? ");
+		int seitenzahl= seite.nextInt();
+
+		System.out.println(Notizblock.abrufen(seitenzahl));
 
 
 	}
