@@ -5,11 +5,11 @@ public class Notizblock{
 
 	public static void speichern(String abl){
 
-		notizen[Speicherplatz]=abl;
+		notizen[speicherplatz]=abl;
 
 		speicherplatz++;
 
-		System.out.println("Die notiz wurde abgelegtauf Seite "+Speicherplatz);
+		System.out.println("Die notiz wurde abgelegtauf Seite "+speicherplatz);
 
 	}	
 
