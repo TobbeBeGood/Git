@@ -6,7 +6,7 @@ public class JavaGit {
 	static Scanner notiz =new Scanner(System.in);
 	static Scanner seite =new Scanner(System.in);
 
-	static int befehl;																						//Variable für Benutzereingabe
+	static int befehl=5;																						//Variable für Benutzereingabe
 
 	public static void main (String[] args){
 
