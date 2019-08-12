@@ -15,7 +15,7 @@ public class Notizblock{
 
 		speicherplatz++;
 
-		System.out.println("Die notiz wurde abgelegtauf Seite "+speicherplatz);
+		System.out.println("Die notiz wurde abgelegt auf Seite "+speicherplatz);
 
 	}	
 
