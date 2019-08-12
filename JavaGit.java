@@ -1,45 +1,42 @@
 import java.util.Scanner;
+import javax.swing.*;
 
 public class JavaGit {
 
 	static Scanner notiz =new Scanner(System.in);
 	static Scanner seite =new Scanner(System.in);
 
-	static String befehl="";																						//Variable für Benutzereingabe
+	static int befehl;																						//Variable für Benutzereingabe
 
 	public static void main (String[] args){
 
 		
-		System.out.println("this program can store information like a notebook");									//Begrüßung
 		
+		String[] options = {"Speichern", "Abruf", "Beenden"};
 		
 
-		while (!befehl.equals("stop")){																				// überspringt den gesamten folgenden Code, sobald der Benutzer "stop" eingibt
+		while (befehl!=2){																				// überspringt den gesamten folgenden Code, sobald der Benutzer "stop" eingibt
 
-			befehl= javax.swing.JOptionPane.showInputDialog("Geben Sie 'save', um eine Notiz zu speichern "+ 		//öffnet ein Dialogfenster und wartet auf Eingabe des Benutzers
-			"oder 'call', um eine Seite im Buch aufzurufen oder 'stop' zum beenden"); 
-
-
-			if (befehl.equals("save")) {																				
-
-				System.out.println("Bitte geben Sie ihre Notiz ein: ");
-				Notizblock.speichern(notiz.next());																		// Notiz wird gespeichert
-
-			} 																											//ende save
+			befehl= JOptionPane.showOptionDialog(null, "Bitte waehlen Sie eine Funktion","Notizbuch Optionen", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,null,options,options[0]); 
 			
-			if (befehl.equals("call")) {
 
-					System.out.println("Auf welcher Seite möchten Sie nachschlagen? ");
+			if (befehl==0) {																						//Speichern
+
+				String eingabe=JOptionPane.showInputDialog("Bitte Notiz eingeben");
+				Notizblock.speichern(eingabe);																		// Notiz wird gespeichert
+
+			} 																											
+
+			if (befehl==1) {																						//Abruf
+
 					int seitenzahl;
 
 					do {
-
-					System.out.println("Bitte wählen Sie eine Seitenzahl zwischen 1 und "+Notizblock.notizen.size()+": ");		
-					seitenzahl= seite.nextInt();
+						seitenzahl= Integer.parseInt(JOptionPane.showInputDialog(null, "Bitte Seitenzahl zwischen 1 und "+Notizblock.notizen.size()+" eingeben"));
 
 					} while (seitenzahl>Notizblock.notizen.size() || seitenzahl<1);									// Diese do-while-Schleife stellt sicher, dass der Benutzer keine Zahl eingibt, die außerhalb der Arraygrenzen liegt, um eine Exception zu vermeiden
 
-					System.out.println(Notizblock.abrufen(seitenzahl));												// Die Methode abrufen leifert den String zurück, der an der Indexstelle von seitenzahl gespeichert ist und wird hier direkt ausgegeben
+					JOptionPane.showMessageDialog(null,"Auf Seite "+seitenzahl+" befindet sich folgende Notiz:  "+Notizblock.abrufen(seitenzahl));												// Die Methode abrufen leifert den String zurück, der an der Indexstelle von seitenzahl gespeichert ist und wird hier direkt ausgegeben
 					
 
 				} 																										// ende call

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import javax.swing.*;
 	
 	
 
@@ -15,7 +16,7 @@ public class Notizblock{
 
 		speicherplatz++;
 
-		System.out.println("Die notiz wurde abgelegt auf Seite "+speicherplatz);
+		JOptionPane.showMessageDialog(null,"Ihre Notiz wurde gespeichert auf Seite: "+speicherplatz+"!");
 
 	}	
 
